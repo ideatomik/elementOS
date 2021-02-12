@@ -1,0 +1,206 @@
+/* TABLETS */
+@media only screen and (max-width: 1024px) {
+
+    body {
+        --cellW: 3.5em;
+        --cellH: 3.5em;
+        --cellInW: 90%;
+        --cellInN: 2.9em;
+        --cellInLeft: 0.2em;
+        --sizeNum : 0.7em;
+        --sizeSym: 1.1em;
+        --sizeName: 0.6em;
+        --sizeInfo: 0.6em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar, .shells, .pshells {
+        display: none !important;
+    }
+
+    #container-main {        
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        overflow: scroll;
+        padding: 0 !important;
+        height: 100%;
+        width: 100vw !important;
+    }
+    
+    #table {
+        width: auto !important;
+        padding: 2em !important;
+    }
+
+}
+
+@media only screen and (max-width: 748px) {    
+
+
+    body {
+        --cellW: 3em;
+        --cellH: 3em;
+        --sizeNum : 0.7em;
+        --sizeSym: 1.0em;
+        --sizeName: 0.55em;
+        --sizeInfo: 0.55em;
+        --cellInLeft: 0.2em;
+        padding: 0;
+        margin: 0;
+        /*background-color: wheat;*/
+    }
+
+    .nameExtra {    
+        letter-spacing: -0.06vw;
+    }
+
+    #container-main {
+        width: 100vw !important; 
+        height: 100vh !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        overflow-x: scroll;
+        position: relative !important;
+        padding: 0 !important;
+    }
+    
+    #table {
+        display: grid;
+        grid-template-columns: repeat(18,auto) 1fr;
+        grid-gap: 0.25em;
+        max-height: 100% !important;
+        width: auto !important; 
+        position: relative !important;
+        padding-top: 2em;
+        padding-left: 1em;
+        padding-right: 2em;
+    }
+
+    .emptyS{
+        width: 1em !important;
+    }
+
+    .bottom_sorrybutIneedtopayrent {
+        display: none;
+    }
+
+} 
+
+/* common laptop */
+@media only screen
+  and (max-height: 768px) 
+  and (max-width: 1366px)
+  and (orientation: landscape) {
+
+    body {
+        --sizeNum: 1.7vh;
+        --sizeSym: 3.5vh;
+        --sizeName: 1.45vh;
+        --sizeInfo: 1.2vh;
+        --sizeShells: 1vh;
+        --sizeShells2: 1vh;
+    }
+
+    .element {
+        height: 4vw;
+    }
+
+    
+    .name, .nameX, .nameExtra, .number {
+        margin-top: 0.25vh !important;
+        height: fit-content;
+    }
+
+    .nameExtra {    
+        font-size: 0.5em;
+        letter-spacing: 0vw;
+    }
+
+    .info1 {
+        margin-top: -1px;
+        line-height: 90%;
+        height: fit-content;
+    }
+
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    body {
+        --cellW: 3.5em;
+        --cellH: 3.5em;
+        --cellInW: 90%;
+        --cellInN: 2.9em;
+        --cellInLeft: 0.2em;
+        --sizeNum : 0.8em;
+        --sizeSym: 1.2em;
+        --sizeName: 0.6em;
+        --sizeInfo: 0.6em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar, .shells, .pshells {
+        display: none !important;
+    }
+}
+
+
+
+/********************************************************************************************** WHO USES THIS ***********/
+/* 1440x900 */
+@media only screen 
+  and (min-width: 1440px) 
+  and (max-height: 900px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    body {
+        --cellInLeft: 0.3em;
+    }
+
+}
+
+
+/* Pixel 2 XL Landscape */
+@media screen 
+  and (max-width: 823px) 
+  and (max-height: 412px) {
+
+    .bottom_sorrybutIneedtopayrent {
+        display: none !important;
+    }
+
+    body {
+        --extrasize: 3vh;
+        --extrasizeneg: -3vh;
+        --cwidth: 3.25vh;
+    }
+
+
+
+}
+
+@media screen 
+  and (min-height: 760px) {
+      .element {
+        padding-top: 0px;
+      }
+  }
+
+  @media screen 
+  and (max-height: 412px) {
+     
+    body {
+        --extrasize: 3vh;
+        --extrasizeneg: -3vh;
+        --cwidth: 4.25vh;
+    }
+
+  }

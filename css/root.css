@@ -1,0 +1,43 @@
+:root {
+    --fonto: 'Source Sans Pro', sans-serif;
+    --fontoclr: #ffffff;
+    --cellW: 4.15vw;
+    --cellWb: 4.2vw;
+    --cellH: 4.15vw;
+    --cellHb: 4.2vw;
+    --cellInW: 3.75vw;
+    --cellInN: 3.5vw;
+    --cellInLeft: 0.85vw;
+    --cellInLeft2: 0.5vw;
+    --sizeNum: 1.5vh;
+    --sizeSym: 3.25vh;
+    --sizeName: 1.05vh;
+    --sizeInfo: 1.0vh;
+    --sizeShells: 0.9vh;
+    --sizeShells2: 0.9vh;
+    --dropdownfontsize: 1.7vh;
+    --outlinecolor: #ffffff;
+    --selectedBorder: #000000;
+    --selectedFill: #fffb00;
+    --auxText: #333333;
+    --auxBorder:  rgba(39, 124, 161, 0.25);
+    --groupColor: #ececec;
+    --setelementbkg: #ffee00;
+    --setelementdk: #577590;
+    --borderradius: 5px;
+
+    --dbkg: #30475e;
+    --dcontrast: #f05454;
+    --dlighttext: rgba(90,90,90,1); /* f4f5db 277DA1 */
+    --cwidth: 4.5vh;
+    --cheight: 4.5vh;
+    --shellsize: 2.5vh;
+    --lvlsize: 1.7vh;
+    --elesize: 1.7vh;
+    --headermain: 1.8vh;
+    --headerextra: 1.3vh;
+    --halfwhite:  rgba(255, 255, 255, 0.45);
+
+    --extrasize: 1.5vh;
+    --extrasizeneg: -1.5vh;
+}

@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela Periódica dos Elementos</title>
+  <meta name="description" content="elementOS 1.5">
+  <meta name="author" content="David Abe">
+
+  
+  <link rel="stylesheet" href="css/root.css">  
+  <link rel="stylesheet" href="css/elements.css?v=1.6">  
+  <link rel="stylesheet" href="css/distr.css?v=1.2">  
+  <link rel="stylesheet" href="css/responsive.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"> 
+  <link rel="shortcut icon" href="#">
+
+</head>
+
+
+<body>
+  <div class="header"></div>
+
+   <!-- #region overlay -->
+   <div class="overlayT" id="overlayA">
+    <button class="cleanbutton" id="close"></button> 
+    <div id="infobox">
+      <div class="titlebox"><span id="namebox" class="infoname-span">Element</span></div>
+      <div id="numberbox"><span id="numberboxtitle">Número Atômico: <span id="numberboxnumber">00</span></div>
+    </div> 
+    <div id="grid">
+        <div id="last" class="zarrow survivor"></div>
+        <div class="header distcell survivor" id="sheader">
+          <div class="bloc">
+            <span class="mnemonic">so</span>
+            <span class="bloctitle so">s</span>
+            <div class="blocknum"><span>max 2</span></div>
+          </div>
+        </div>
+      </div>
+  </div>
+   <!-- #region overlay -->
+  
+
+  </div>
+
+<div id="container-main">
+    <div id="table">
+      <div class="emptyS"></div>
+
+      <!-- #region Periods -->
+      <div class="period p1">
+        <div class="pnum"><span>1</span></div>
+        <div class="pshells"><span>K</span></div>
+      </div>
+      <div class="period p2">
+        <div class="pnum"><span>2</span></div>
+        <div class="pshells"><span>K<br>L</span></div>
+      </div>
+      <div class="period p3">
+        <div class="pnum"><span>3</span></div>
+        <div class="pshells"><span>K<br>L<br>M</span></div>
+      </div>
+      <div class="period p4">
+        <div class="pnum"><span>4</span></div>
+        <div class="pshells"><span>K<br>L<br>M<br>N</span></div>
+      </div>
+      <div class="period p5">
+        <div class="pnum"><span>5</span></div>
+        <div class="pshells"><span>K<br>L<br>M<br>N<br>O</span></div>
+      </div>
+      <div class="period p6">
+        <div class="pnum"><span>6</span></div>
+        <div class="pshells"><span>K<br>L<br>M<br>N<br>O<br>P</span></div>
+      </div>
+      <div class="period p6">
+        <div class="pnum"><span>6</span></div>
+        <div class="pshells"><span>K<br>L<br>M<br>N<br>O<br>P</span></div>
+      </div>
+      <div class="period p7">
+        <div class="pnum"><span>7</span></div>
+        <div class="pshells"><span>K<br>L<br>M<br>N<br>O<br>P<br>Q</span></div>
+      </div>
+      <div class="period p8">
+        <div class="pnum"><span>6</span></div>
+        <div class="pshells"><span>K<br>L<br>M<br>N<br>O<br>P</span></div>
+      </div>
+      <div class="period p9">
+        <div class="pnum"><span>7</span></div>
+        <div class="pshells"><span>K<br>L<br>M<br>N<br>O<br>P<br>Q</span></div>
+      </div>
+      <!-- #endregion Periods -->
+
+      <!-- #region 57 and 89 -->
+      <div class="extrael cell lanta cat4">
+        <div class="extranum"><span>57 a 71</span></div>
+        <div class="name nameX"><span>Lantanídeos</span></div>
+      </div>
+      <div class="extrael cell acti cat5">
+        <div class="extranum"><span>89 a 103</span></div>
+        <div class="name nameX"><span>Actinídios</span></div>
+      </div>
+      <!-- #endregion 57 and 89 -->
+      
+
+      <!-- #region display -->
+
+      <div class="displaywindow">
+
+      </div>
+
+      <!-- #endregion display -->
+
+      <div class="emptyM"></div>
+      <div class="emptyB"></div>
+      <div class="overlay">
+      
+      </div>
+
+
+    </div>
+
+    <div class="sidebar">
+      <div class="settings">
+
+      <!-- #region element settings -->        
+        <div class="setElement">
+          <div class="setnumber">
+            <span class="setnumber-span">00</span>
+            <div class="setnumberwhat"><span>número atômico</span></div>
+          </div>
+          
+          <div class="setsymbol">
+            <span class="setsymbol-span">El</span>
+            <div class="setsymbolwhat"><span>símbolo</span></div>
+          </div>
+          <div class="setname"><span>Elemento</span></div>
+          <div class="setinfo1"><span></span></div>  
+          <div class="setshells"><span>camadas eletrônicas</span></div> 
+          <div class="setmenu">
+            <button id="info1dropdown" tabindex="1">
+              <span id="info1dropdownspan">Massa Atômica</span><div class="arrowbox"><i class="arrow down"></i></div>
+              <div id="setDropdown" class="dropdown-content">
+                <ul id="setDropdownList">
+                  <li data-property="mass">Massa Atômica</li>
+                  <li data-property="eneg">Eletronegatividade</li>
+                  <li data-property="eafi">Eletroafinidade</li>
+                </ul>
+              </div>
+            </button>
+            
+          </div>
+        </div>
+        <!-- #endregion element settings -->  
+        
+      </div>
+      
+      <!-- #region legenda -->
+    
+      <button class="groupL" data-cate="cat1">
+        <div class="groupcolor cat1" data-cate="cat1"></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat1">Metais Alcalinos</span></div>
+      </button>
+    
+      <button class="groupL" data-cate="cat2">
+        <div class="groupcolor cat2" data-cate="cat2"></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat2">Metais Alcalino-terrosos</span></div>
+      </dibuttonv>
+    
+      <button class="groupL" data-cate="cat3">
+        <div class="groupcolor cat3" data-cate="cat3"></div>
+        <div class="groupname"><spa class="groupname-span" data-cate="cat3">Metais de transição</span></div>
+      </button>
+    
+      <button class="groupL" data-cate="cat4">
+        <div class="groupcolor cat4" data-cate="cat4"></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat4">Lantanídeos</span></div>
+      </button>
+    
+      <button class="groupL" data-cate="cat5">
+        <div class="groupcolor cat5" data-cate="cat5"></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat5">Actinídeos</span></div>
+      </button>
+    
+      <button class="groupL" data-cate="cat6">
+        <div class="groupcolor cat6" data-cate="cat6"></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat6">Metais pós-transição</span></div>
+      </button>
+    
+      <button class="groupL" data-cate="cat7">
+        <div class="groupcolor cat7" data-cate="cat7"></div>
+        <div class="groupname"><span class="groupname-span"  data-cate="cat7">Semimetais&#47Metalóides</span></div>
+      </button>
+    
+      <button class="groupL" data-cate="cat8">
+        <div class="groupcolor cat8" data-cate="cat8"></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat8">Não-metais&#47Ametais</span></div>
+      </button>
+    
+      <button class="groupL" data-cate="cat9">
+        <div class="groupcolor cat9" data-cate="cat9"></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat9">Halogênios</span></div>
+      </button>
+      
+      <button class="groupL" data-cate="cat10">
+        <div class="groupcolor cat10" data-cate="cat10"></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat10">Gases nobres</span></div>
+      </button> 
+    
+      <button class="groupL" data-cate="cat12">
+        <div class="groupcolor cat12" data-cate="cat12"><span class="lspan">H</span></div>
+        <div class="groupname"><span class="groupname-span" data-cate="cat12">Diferentão</span></div>
+      </button> 
+    
+      <button class="groupL" data-cate="syn">
+        <div class="groupcolor cat14 syn" data-cate="syn"><span class="lspan synthetic">X</span></div>
+        <div class="groupname"><span class="groupname-span" data-cate="syn">Elementos sintéticos</span></div>
+      </button> 
+    
+      <button class="groupL notme">
+        <div class="groupcolor cat13"><span class="lspan"  data-cate="cat12">*</span></div>
+        <div class="groupname"><span class="groupname-span">Elementos sintéticos cuja categoria é estimada</span></div>
+      </button> 
+    
+      <!-- #endregion legenda -->
+    
+    </div>
+
+
+
+</div>
+  
+  <script type="application/json" src="data/data.json"></script> 
+  <script type="text/javascript" src="js/dist.js"></script> 
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/datahandler.js"></script>
+  
+  
+</body>
+
+</html>

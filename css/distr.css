@@ -1,0 +1,281 @@
+#grid {
+    /*display: grid; it starts hidden */    
+    display: none;
+    grid-template-columns: repeat(11, var(--cwidth));
+    grid-template-rows: repeat(17,var(--cwidth));
+}
+
+.distcell, .emptycell, .lastrow, #last {
+    width: var(--cwidth);
+    height: var(--cheight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.spacer {
+    height: 2vh;
+    width: var(--cwidth);
+}
+
+.filled {      
+    background-position: center;
+    z-index: 1;
+}
+
+.shelline, .filled, .countcolumn, .shellscolumn {
+    background-color: var(--halfwhite);
+    background-blend-mode: normal;
+}
+
+.shellscolumn {
+    background-color: var(--setelementdk);
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* #region text */
+
+.level, .electrons, .shellcount, .shell {
+    font-family: var(--fonto);
+    color: var(--dlighttext);    
+}
+
+.shell {
+    font-weight: 700;
+    font-size: var(--shellsize);
+    color: var(--fontoclr);
+}
+
+.shellcount {
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    margin-left: 1vh;
+    font-size: var(--shellsize);
+}
+
+.level {
+    font-size: var(--lvlsize);
+    font-weight: 300;
+}
+
+.electrons {
+    font-size: var(--elesize);
+    font-weight: 600;
+    margin-bottom: 15%;
+    margin-left: 5%;
+}
+
+/* #endregion text */
+
+.survivor {
+    visibility: visible;
+}
+
+.shellscolumn {
+    grid-column: 1;
+}
+
+
+/* #region headers */
+
+.header {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: start;
+}
+
+
+.mnemonic, .bloctitle, .blocknum {
+    font-family: var(--fonto);
+    text-align: center;
+    line-height: 100%;
+    display: block;
+    width: var(--cwidth);
+    height: fit-content;
+}
+
+.mnemonic {
+    color: var(--dbkg);
+    font-size: var(--headerextra);
+    font-style: italic;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.bloctitle {
+    /*background-color: var(--setelementdk);*/
+    color: var(--fontoclr);
+    font-size: var(--headermain);
+    height: 1.5em;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 1.5em;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.blocknum {
+    color: var(--dlighttext);
+    font-size: var(--headerextra);
+}
+
+.so {
+    background-color: #EE2525;
+}
+
+.pa {
+    background-color: #579983;
+}
+
+.de {
+    background-color: #f8961e;
+}
+
+.fe {
+    background-color: #905B92;
+}
+
+/* #endregion headers */
+
+/* #region groups */
+/*
+.sgroup {
+    grid-column: 6;
+}
+
+.pgroup {
+    grid-column: 8;
+}
+
+.dgroup {
+    grid-column: 10;
+}
+
+.fgroup {
+    grid-column: 12;
+}
+
+
+
+.countcolumn {
+    grid-column: 2;
+}
+
+.spacingscolumn {
+    grid-column: 5;
+}
+*/
+/* #endregion groups */
+
+/* #region graphics */
+
+.curveup, .curvedown, .line, .zarrow, .connectup, .connectdown, .lineclean, .linedotted {
+    background-size: 100%;
+    opacity: 0.9;
+    width: inherit;
+    height: inherit;
+}
+
+.frame {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-image: url('../img/svg/frame.svg');
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.9;
+
+}
+
+.curveup {
+    background-image: url('../img/svg/curve-up.svg');
+    z-index: 5;
+}
+
+.curvedown {
+    background-image: url('../img/svg/curve-down.svg');
+}
+
+.line {
+    background-image: url('../img/svg/line.svg');
+    z-index: 1;
+}
+
+.linedotted {
+    background-image: url('../img/svg/line-dottted.svg');
+}
+
+.lineclean {
+    background-image: url('../img/svg/line-clean.svg');
+}
+
+.zarrow {
+    background-image: url('../img/svg/arrow.svg');
+}
+
+.connectup {
+    background-image: url('../img/svg/connect-up.svg');
+    opacity: 0.3;
+}
+
+.connectdown {
+    background-image: url('../img/svg/connect-down.svg');
+    margin-bottom: 2px;
+}
+
+/* #endregion graphics */
+
+
+/* #region infobox */
+
+#infobox {
+    display: none;
+    height: 15vh;
+    width: 72.5%;
+    margin-bottom: 3vh;
+}
+
+#namebox {
+    height: 10vh;
+    margin-bottom: 2vh;
+}
+
+.infoname-span {
+    font-family: var(--fonto);
+    font-weight: 700;
+    font-size: 6vh;
+    color: var(--setelementdk);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 100%;    
+}
+
+#numberbox {
+    border-bottom: 1px dotted var(--setelementdk);
+    padding-bottom: 1vh;
+}
+
+#numberboxtitle, #numberboxnumber {
+    font-family: var(--fonto);
+    font-weight: 400;
+    font-size: 3vh;
+    color: var(--setelementdk);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 100%;    
+}
+
+
+
+/* #endregion infobox */
+
